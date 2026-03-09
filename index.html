@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comerciante de Mercado | Ofertas Selecionadas</title>
+    <style>
+        :root {
+            --bg-dark: #0a0c12;
+            --bg-card: #161b28;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --accent-blue: #38bdf8;
+            --ml-green: #22c55e;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(180deg, #1e293b 0%, #0a0c12 100%);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .logo { font-size: 1.8rem; font-weight: 900; text-transform: uppercase; letter-spacing: -1px; }
+        .logo span { color: var(--accent-blue); }
+
+        .category-section {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        .category-title {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--accent-blue);
+            margin-bottom: 20px;
+            padding-left: 10px;
+            border-left: 4px solid var(--accent-blue);
+            text-transform: uppercase;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+            margin-bottom: 15px;
+        }
+
+        .img-container {
+            background: #fff;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-name {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            min-height: 48px;
+            color: #fff;
+        }
+
+        .price-area {
+            margin-bottom: 20px;
+        }
+
+        .price-label {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .btn-buy {
+            display: block;
+            background: var(--accent-blue);
+            color: #000;
+            text-align: center;
+            padding: 18px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 800;
+            text-transform: uppercase;
+            transition: 0.2s;
+        }
+
+        .btn-buy:hover { background: #fff; }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        @media (max-width: 600px) {
+            .product-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Comerciante de <span>Mercado</span></div>
+    </header>
+
+    <section class="category-section">
+        <h2 class="category-title">Tecnologia & Gadgets</h2>
+        <div class="product-grid">
+            
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_680792-MLA97494565444_112025-F.webp" alt="Smartwatch Aurafit G12">
+                </div>
+                <div class="card-content">
+                    <div class="product-name">Smartwatch Aurafit G12 GPS AMOLED 1.43" Bluetooth Resistente Água</div>
+                    <div class="price-area">
+                        <span class="price-label">VER OFERTA</span>
+                    </div>
+                    <a href="https://meli.la/14pqYHP" class="btn-buy" target="_blank">VER NO MERCADO LIVRE</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_869872-MLB107558371853_022026-F.webp" alt="Smartwatch Aurafit Trek 2">
+                </div>
+                <div class="card-content">
+                    <div class="product-name">Smartwatch Aurafit Trek 2 Com Gps Resistente À Água 3atm Titânio</div>
+                    <div class="price-area">
+                        <span class="price-label">VER OFERTA</span>
+                    </div>
+                    <a href="https://meli.la/18QVyJC" class="btn-buy" target="_blank">VER NO MERCADO LIVRE</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="category-section">
+        <h2 class="category-title">Energia Solar</h2>
+        <div class="product-grid">
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_968366-MLB96723867823_102025-F.webp" alt="Kit Painel Solar">
+                </div>
+                <div class="card-content">
+                    <div class="product-name">Kit Painel Placa 170w + Carregador De Bateria 12v C/ Cabo</div>
+                    <div class="price-area">
+                        <span class="price-label">VER OFERTA</span>
+                    </div>
+                    <a href="https://meli.la/24W79xR" class="btn-buy" target="_blank">VER NO MERCADO LIVRE</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_615725-MLA99504787590_112025-F.webp" alt="Bateria Freedom AGM">
+                </div>
+                <div class="card-content">
+                    <div class="product-name">Bateria Freedom AGM 70Ah 12V Estacionária Energia Solar</div>
+                    <div class="price-area">
+                        <span class="price-label">VER OFERTA</span>
+                    </div>
+                    <a href="https://meli.la/29NXcgt" class="btn-buy" target="_blank">VER NO MERCADO LIVRE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-section">
+        <h2 class="category-title">Automotivo</h2>
+        <div class="product-grid">
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_670465-MLB76248678842_052024-F.webp" alt="Bateria Bosch">
+                </div>
+                <div class="card-content">
+                    <div class="product-name">Bateria Bosch Automotiva 60ah Selada Cca 425ah Flex Direito</div>
+                    <div class="price-area">
+                        <span class="price-label">VER OFERTA</span>
+                    </div>
+                    <a href="https://meli.la/2VRdeTU" class="btn-buy" target="_blank">VER NO MERCADO LIVRE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>Comerciante de Mercado</strong></p>
+        &copy; 2026 - Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
